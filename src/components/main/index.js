@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import './main.css'
-import biscuit from './assets/Biscuit.jpg'
-import blackbird from './assets/Blackbird.jpg'
-import cabin from './assets/Cabin.jpg'
-import dirt from './assets/Dirt.jpg'
+import Tiles from './tiles'
 
 class Main extends Component {
   render() {
     return (
       <div className="main">
-        <img src={blackbird} alt='blackbird, acrylic on canvas' />
+        <h1>Liz Trenholme Art.</h1>
+        <Tiles />
       </div>
     )
   }

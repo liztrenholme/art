@@ -1,0 +1,45 @@
+/* main  */
+.main {
+    padding: 4em;
+}
+h1 {
+    font-family: 'Tajawal', sans-serif;
+    text-align: end;
+    color: #555;
+}
+
+/* tiles  */
+.tiles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+.art-image-container {
+    max-width: 300px;
+    max-height: 300px;
+    align-self: flex-end;
+}
+.art-image {
+    width: 100%;
+}
+.image-buttons {
+    opacity: 0;
+    /* height: 100%; */
+    width: 100%;
+    margin-top: -3em;
+}
+.image-buttons:hover {
+    opacity: 1;
+}
+button {
+    color: #fff;
+    background-color: #888;
+    padding: .5em;
+    border-radius: 5px;
+    border: 1px solid #888;
+    font-size: 1.2em;
+    opacity: .9;
+    /* margin-top: -5em; */
+}
