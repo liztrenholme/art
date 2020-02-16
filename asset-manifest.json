@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/art/static/css/main.94ad0424.chunk.css",
+    "main.js": "/art/static/js/main.879176fc.chunk.js",
+    "main.js.map": "/art/static/js/main.879176fc.chunk.js.map",
+    "runtime-main.js": "/art/static/js/runtime-main.51122d5b.js",
+    "runtime-main.js.map": "/art/static/js/runtime-main.51122d5b.js.map",
+    "static/js/2.a43ee24c.chunk.js": "/art/static/js/2.a43ee24c.chunk.js",
+    "static/js/2.a43ee24c.chunk.js.map": "/art/static/js/2.a43ee24c.chunk.js.map",
+    "index.html": "/art/index.html",
+    "precache-manifest.68205cc7d32108520f76d3c9ea90679b.js": "/art/precache-manifest.68205cc7d32108520f76d3c9ea90679b.js",
+    "service-worker.js": "/art/service-worker.js",
+    "static/css/main.94ad0424.chunk.css.map": "/art/static/css/main.94ad0424.chunk.css.map",
+    "static/js/2.a43ee24c.chunk.js.LICENSE.txt": "/art/static/js/2.a43ee24c.chunk.js.LICENSE.txt",
+    "static/media/Biscuit.jpg": "/art/static/media/Biscuit.98d506df.jpg",
+    "static/media/Blackbird.jpg": "/art/static/media/Blackbird.6566aee1.jpg",
+    "static/media/Cabin.jpg": "/art/static/media/Cabin.8d1a8629.jpg",
+    "static/media/Dirt.jpg": "/art/static/media/Dirt.235a5b45.jpg",
+    "static/media/Hoggy.jpg": "/art/static/media/Hoggy.546b16ab.jpg",
+    "static/media/Magoo.jpg": "/art/static/media/Magoo.e7717902.jpg",
+    "static/media/Sparrow.jpg": "/art/static/media/Sparrow.043fb7b2.jpg",
+    "static/media/Time.jpg": "/art/static/media/Time.bf52df0f.jpg",
+    "static/media/viandan.jpg": "/art/static/media/viandan.89bf5f4d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.51122d5b.js",
+    "static/js/2.a43ee24c.chunk.js",
+    "static/css/main.94ad0424.chunk.css",
+    "static/js/main.879176fc.chunk.js"
+  ]
+}
