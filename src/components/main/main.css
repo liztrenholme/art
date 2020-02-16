@@ -6,6 +6,10 @@ h1 {
     font-family: 'Tajawal', sans-serif;
     text-align: end;
     color: #555;
+    margin-right: 3em;
+}
+footer {
+    text-align: center;
 }
 
 /* tiles  */
@@ -67,7 +71,7 @@ button {
   
   }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
     .grid-container, .checkbox-div {
         grid-template-columns: auto auto;
       }
@@ -75,26 +79,20 @@ button {
         left: 50%;
         width: 700px;
     }
-  }
+  } */
 
-@media only screen and (max-width: 500px) {
-.grid-container, .checkbox-div {
-    grid-template-columns: auto;
-    }
-    .large-view-modal {
+@media only screen and (max-width: 800px) {
+    .modal-image {
         position: fixed;
         z-index: 100000010;
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 5px 5px 20px;
-        width: 300px;
-        max-height: 80%;
+        max-width: 90%;
+        max-height: 90%;
         overflow: scroll;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-    .large-view-image {
-        width: 300px;
     }
 }
