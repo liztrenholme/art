@@ -12,16 +12,30 @@ import viandan from './assets/viandan.jpg'
 
 class Tiles extends Component {
     state = {
-      visibleButtons: ''
+      visibleButtons: '',
+      modalVisible: false,
+      selectedImage: ''
     }
 
     handleButtons = (btnName) => () => {
       this.setState({visibleButtons: btnName})
     }
+    handleSelectImage = (image) => () => {
+      this.setState({selectedImage: image, modalVisible: true})
+    }
+    closeModal = () => this.setState({modalVisible: false})
     render() {
-      const {visibleButtons} = this.state
+      const {visibleButtons, modalVisible, selectedImage} = this.state
       return (
         <div className="tiles-container">
+          {modalVisible ? 
+            <div className='modal-overlay' onClick={this.closeModal} />
+            : null}
+          {modalVisible ? 
+            <div className='image-modal'>
+              <img src={selectedImage} className='modal-image' />
+            </div>
+            : null}
           <div className='art-image-container'>
             <img 
               src={dirt} 
@@ -30,7 +44,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('dirt')} />
             {visibleButtons === 'dirt' ?
               <div className='image-buttons'>
-                <button>View larger</button>
+                <button onClick={this.handleSelectImage(dirt)}>View larger</button>
               </div> : null}
           </div>
           <div className='art-image-container'>
@@ -38,7 +52,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('biscuit')} />
             {visibleButtons === 'biscuit' ?
               <div className='image-buttons'>
-                <button>View larger</button>
+                <button onClick={this.handleSelectImage(biscuit)}>View larger</button>
               </div> : null}
           </div>
           <div className='art-image-container'>
@@ -46,7 +60,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('cabin')} />
             {visibleButtons === 'cabin' ?
               <div className='image-buttons'>
-                <button>View larger</button>
+                <button onClick={this.handleSelectImage(cabin)}>View larger</button>
               </div> : null}
           </div>
           <div className='art-image-container'>
@@ -54,7 +68,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('blackbird')} />
             {visibleButtons === 'blackbird' ?
               <div className='image-buttons'>
-                <button>View larger</button>
+                <button onClick={this.handleSelectImage(blackbird)}>View larger</button>
               </div> : null}
           </div>
           <div className='art-image-container'>
@@ -62,7 +76,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('mugsy')} />
             {visibleButtons === 'mugsy' ?
               <div className='image-buttons'>
-                <button>View larger</button>
+                <button onClick={this.handleSelectImage(mugsy)}>View larger</button>
               </div> : null}
           </div>
           <div className='art-image-container'>
@@ -70,7 +84,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('viandan')} />
             {visibleButtons === 'viandan' ?
               <div className='image-buttons'>
-                <button>View larger</button>
+                <button onClick={this.handleSelectImage(viandan)}>View larger</button>
               </div> : null}
           </div>
           <div className='art-image-container'>
@@ -78,7 +92,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('time')} />
             {visibleButtons === 'time' ?
               <div className='image-buttons'>
-                <button>View larger</button>
+                <button onClick={this.handleSelectImage(time)}>View larger</button>
               </div> : null}
           </div>
           <div className='art-image-container'>
@@ -86,7 +100,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('hoggy')} />
             {visibleButtons === 'hoggy' ?
               <div className='image-buttons'>
-                <button>View larger</button>
+                <button onClick={this.handleSelectImage(hog)}>View larger</button>
               </div> : null}
           </div>
           <div className='art-image-container'>
@@ -94,7 +108,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('sparrow')} />
             {visibleButtons === 'sparrow' ?
               <div className='image-buttons'>
-                <button>View larger</button>
+                <button onClick={this.handleSelectImage(sparrow)}>View larger</button>
               </div> : null}
           </div>
         </div>

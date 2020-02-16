@@ -19,18 +19,15 @@ h1 {
 .art-image-container {
     max-width: 300px;
     max-height: 400px;
-    align-self: flex-end;
+    align-self: baseline;
 }
 .art-image {
     width: 100%;
-    padding: 2em;
+    max-height: 500px;
 }
 .image-buttons {
     opacity: .7;
-    /* height: 100%; */
-    width: 100%;
-    margin-top: -3em;
-    /* margin-bottom: 3em; */
+    margin-top: -2.8em;
 }
 .image-buttons:hover {
     opacity: 1;
@@ -44,4 +41,60 @@ button {
     font-size: 1.2em;
     opacity: .9;
     /* margin-top: -5em; */
+}
+.modal-image {
+    position: fixed;
+	z-index: 100000010;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 20px;
+	max-width: 50%;
+	max-height: 80%;
+	overflow: scroll;
+	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.modal-overlay {
+    z-index: 100000000;
+    background-color: #353A40;
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+  }
+
+@media only screen and (max-width: 800px) {
+    .grid-container, .checkbox-div {
+        grid-template-columns: auto auto;
+      }
+    .large-view-modal {
+        left: 50%;
+        width: 700px;
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+.grid-container, .checkbox-div {
+    grid-template-columns: auto;
+    }
+    .large-view-modal {
+        position: fixed;
+        z-index: 100000010;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 5px 5px 20px;
+        width: 300px;
+        max-height: 80%;
+        overflow: scroll;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .large-view-image {
+        width: 300px;
+    }
 }
