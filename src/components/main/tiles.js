@@ -51,10 +51,6 @@ class Tiles extends Component {
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(dirt)}
               style={visibleButtons === 'dirt' ? {opacity: 1} : {opacity: 0.9}} />
-            {/* {visibleButtons === 'dirt' ?
-              <div className='image-buttons'>
-                <button onClick={this.handleSelectImage(dirt)}>View larger</button>
-              </div> : null} */}
           </div>
           <div className='art-image-container'>
             <img 
@@ -66,10 +62,6 @@ class Tiles extends Component {
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(biscuit)}
               style={visibleButtons === 'biscuit' ? {opacity: 1} : {opacity: 0.9}} />
-            {/* {visibleButtons === 'biscuit' ?
-              <div className='image-buttons'>
-                <button onClick={this.handleSelectImage(biscuit)}>View larger</button>
-              </div> : null} */}
           </div>
           <div className='art-image-container'>
             <img 
@@ -81,10 +73,6 @@ class Tiles extends Component {
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(cabin)}
               style={visibleButtons === 'cabin' ? {opacity: 1} : {opacity: 0.9}} />
-            {/* {visibleButtons === 'cabin' ?
-              <div className='image-buttons'>
-                <button onClick={this.handleSelectImage(cabin)}>View larger</button>
-              </div> : null} */}
           </div>
           <div className='art-image-container'>
             <img src={blackbird} 
@@ -95,10 +83,6 @@ class Tiles extends Component {
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(blackbird)}
               style={visibleButtons === 'blackbird' ? {opacity: 1} : {opacity: 0.9}} />
-            {/* {visibleButtons === 'blackbird' ?
-              <div className='image-buttons'>
-                <button onClick={this.handleSelectImage(blackbird)}>View larger</button>
-              </div> : null} */}
           </div>
           <div className='art-image-container'>
             <img 
@@ -110,10 +94,6 @@ class Tiles extends Component {
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(viandan)}
               style={visibleButtons === 'viandan' ? {opacity: 1} : {opacity: 0.9}} />
-            {/* {visibleButtons === 'viandan' ?
-              <div className='image-buttons'>
-                <button onClick={this.handleSelectImage(viandan)}>View larger</button>
-              </div> : null} */}
           </div>
           <div className='art-image-container'>
             <img 
@@ -125,10 +105,6 @@ class Tiles extends Component {
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(time)}
               style={visibleButtons === 'time' ? {opacity: 1} : {opacity: 0.9}} />
-            {/* {visibleButtons === 'time' ?
-              <div className='image-buttons'>
-                <button onClick={this.handleSelectImage(time)}>View larger</button>
-              </div> : null} */}
           </div>
           <div className='art-image-container'>
             <img 
@@ -140,10 +116,6 @@ class Tiles extends Component {
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(hog)}
               style={visibleButtons === 'hoggy' ? {opacity: 1} : {opacity: 0.9}} />
-            {/* {visibleButtons === 'hoggy' ?
-              <div className='image-buttons'>
-                <button onClick={this.handleSelectImage(hog)}>View larger</button>
-              </div> : null} */}
           </div>
           <div className='art-image-container'>
             <img 
@@ -155,10 +127,6 @@ class Tiles extends Component {
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(sparrow)}
               style={visibleButtons === 'sparrow' ? {opacity: 1} : {opacity: 0.9}} />
-            {/* {visibleButtons === 'sparrow' ?
-              <div className='image-buttons'>
-                <button onClick={this.handleSelectImage(sparrow)}>View larger</button>
-              </div> : null} */}
           </div>
           <div className='art-image-container'>
             <img 
@@ -170,10 +138,6 @@ class Tiles extends Component {
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(mugsy)}
               style={visibleButtons === 'mugsy' ? {opacity: 1} : {opacity: 0.9}} />
-            {/* {visibleButtons === 'mugsy' ?
-              <div className='image-buttons'>
-                <button onClick={this.handleSelectImage(mugsy)}>View larger</button>
-              </div> : null} */}
           </div>
         </div>
       )
