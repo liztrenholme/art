@@ -59,10 +59,18 @@ button {
   	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.modal-image-description {
+    height: 60%;
+    width: 60%; 
+    background-color: #333; 
+    color: #fff; 
+    padding: 2em;
+    opacity: 0.9;
+}
 .modal-overlay {
     z-index: 100000000;
     background-color: #353A40;
-    opacity: .8;
+    opacity: .7;
     position: fixed;
     top: 0;
     left: 0;

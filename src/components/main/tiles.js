@@ -40,7 +40,6 @@ class Tiles extends Component {
 
     render() {
       const {visibleButtons, modalVisible, selectedImage, descriptionVisible, selectedDescription} = this.state
-      console.log(descriptionVisible, selectedDescription)
       return (
         <div className="tiles-container">
           {modalVisible ? 
@@ -51,8 +50,7 @@ class Tiles extends Component {
               {descriptionVisible ? 
                 <p 
                   onClick={this.toggleDescription}
-                  className='modal-image'
-                  style={{height: '80%', width: '80%', backgroundColor: '#444', color: '#fff'}}>
+                  className='modal-image modal-image-description'>
                   {selectedDescription}
                 </p> :
                 <img 
