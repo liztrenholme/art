@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import './main.css'
-import biscuit from './assets/Biscuit.jpg'
-import blackbird from './assets/Blackbird.jpg'
-import cabin from './assets/Cabin.jpg'
-import dirt from './assets/Dirt.jpg'
-import hog from './assets/Hoggy.jpg'
-import mugsy from './assets/Magoo.jpg'
-import sparrow from './assets/Sparrow.jpg'
-import time from './assets/Time.jpg'
-import viandan from './assets/viandan.jpg'
+import React, { Component } from 'react';
+import './main.css';
+import biscuit from './assets/Biscuit.jpg';
+import blackbird from './assets/Blackbird.jpg';
+import cabin from './assets/Cabin.jpg';
+import dirt from './assets/Dirt.jpg';
+import hog from './assets/Hoggy.jpg';
+import mugsy from './assets/Magoo.jpg';
+import sparrow from './assets/Sparrow.jpg';
+import time from './assets/Time.jpg';
+import viandan from './assets/viandan.jpg';
 
 class Tiles extends Component {
     state = {
@@ -20,7 +20,7 @@ class Tiles extends Component {
     }
 
     handleButtons = (btnName) => () => {
-      this.setState({visibleButtons: btnName})
+      this.setState({visibleButtons: btnName});
     }
 
     handleSelectImage = (image, description) => () => {
@@ -28,7 +28,7 @@ class Tiles extends Component {
         selectedImage: image, 
         modalVisible: true, 
         selectedDescription: description
-      })
+      });
     }
 
     toggleDescription = () => this.state.descriptionVisible 
@@ -39,7 +39,7 @@ class Tiles extends Component {
     closeModal = () => this.setState({modalVisible: false, descriptionVisible: false})
 
     render() {
-      const {visibleButtons, modalVisible, selectedImage, descriptionVisible, selectedDescription} = this.state
+      const {visibleButtons, modalVisible, selectedImage, descriptionVisible, selectedDescription} = this.state;
       return (
         <div className="tiles-container">
           {modalVisible ? 
@@ -161,9 +161,9 @@ class Tiles extends Component {
               style={visibleButtons === 'mugsy' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
         </div>
-      )
+      );
     }
 }
 
 
-export default Tiles
+export default Tiles;

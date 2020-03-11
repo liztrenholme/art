@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import './main.css'
-import Tiles from './tiles'
+import React, { Component } from 'react';
+import './main.css';
+import Tiles from './tiles';
 
 class Main extends Component {
   render() {
@@ -10,9 +10,9 @@ class Main extends Component {
         <Tiles />
         <footer>&#9400; 2000-{new Date().getFullYear()} Liz Trenholme Art | All rights reserved.</footer>
       </div>
-    )
+    );
   }
 }
 
 
-export default Main
+export default Main;
