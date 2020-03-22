@@ -23,7 +23,7 @@ h1 {
     text-align: right;
     position: fixed;
     z-index: 10000000;
-    top: 15%;
+    top: 23%;
   	left: 90%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
@@ -33,8 +33,15 @@ a {
     text-decoration: none;
     color: #000;
 }
-a:hover {
-    background-color: #aaa;
+.menuItem {
+    padding: .5em;
+    cursor: pointer;
+}
+.menuItem:hover {
+    background-color: #ccc;
+}
+.menuCloser {
+    cursor: pointer;
 }
 
 footer {
