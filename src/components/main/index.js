@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './main.css';
 import Tiles from './tiles';
 import Contact from '../contact';
+import arrowDown from './assets/arrows-down.png';
 
 class Main extends Component {
   state = {
@@ -33,7 +34,13 @@ render() {
           <p 
             className='menuItem'
             onClick={this.handleToggleContact}>contact</p>
-        </div>) : null}
+        </div>) 
+        : <img 
+          className='menu'
+          src={arrowDown} 
+          alt='More'
+          onClick={this.handleToggleMenu}
+          style={{width: '25px', top: '5.5em', cursor: 'pointer'}} />}
       {contactModalOpen ?
         <div 
           className='modal-overlay' 
