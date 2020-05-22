@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/art/static/css/main.17f40b05.chunk.css",
+    "main.css": "/art/static/css/main.f0916a27.chunk.css",
     "main.js": "/art/static/js/main.e6c8434c.chunk.js",
     "main.js.map": "/art/static/js/main.e6c8434c.chunk.js.map",
     "runtime-main.js": "/art/static/js/runtime-main.51122d5b.js",
@@ -8,9 +8,9 @@
     "static/js/2.914bd159.chunk.js": "/art/static/js/2.914bd159.chunk.js",
     "static/js/2.914bd159.chunk.js.map": "/art/static/js/2.914bd159.chunk.js.map",
     "index.html": "/art/index.html",
-    "precache-manifest.6c52b407197bff1dab10b6f0848b33b1.js": "/art/precache-manifest.6c52b407197bff1dab10b6f0848b33b1.js",
+    "precache-manifest.a8553b56c5366cd816da365157baabd3.js": "/art/precache-manifest.a8553b56c5366cd816da365157baabd3.js",
     "service-worker.js": "/art/service-worker.js",
-    "static/css/main.17f40b05.chunk.css.map": "/art/static/css/main.17f40b05.chunk.css.map",
+    "static/css/main.f0916a27.chunk.css.map": "/art/static/css/main.f0916a27.chunk.css.map",
     "static/js/2.914bd159.chunk.js.LICENSE.txt": "/art/static/js/2.914bd159.chunk.js.LICENSE.txt",
     "static/media/Biscuit.jpg": "/art/static/media/Biscuit.98d506df.jpg",
     "static/media/Blackbird.jpg": "/art/static/media/Blackbird.6566aee1.jpg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.51122d5b.js",
     "static/js/2.914bd159.chunk.js",
-    "static/css/main.17f40b05.chunk.css",
+    "static/css/main.f0916a27.chunk.css",
     "static/js/main.e6c8434c.chunk.js"
   ]
 }
