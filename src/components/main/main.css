@@ -71,6 +71,7 @@ footer {
 .art-image {
     width: 100%;
     max-height: 500px;
+    cursor: pointer;
 }
 
 .image-buttons {
@@ -105,6 +106,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 .modal-image-description {
@@ -114,6 +116,7 @@ button {
     color: #fff;
     padding: 2em;
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .modal-overlay {
