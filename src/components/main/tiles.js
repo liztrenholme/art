@@ -9,6 +9,7 @@ import mugsy from './assets/Magoo.jpg';
 import sparrow from './assets/Sparrow.jpg';
 import time from './assets/Time.jpg';
 import viandan from './assets/viandan.jpg';
+import wildflowers from './assets/wildflowers.JPG';
 
 class Tiles extends Component {
     state = {
@@ -31,6 +32,12 @@ class Tiles extends Component {
       });
     }
 
+    resizeHandler() {
+      const width = this.divElement.clientWidth;
+      const height = this.divElement.clientHeight;
+      this.setState({ width, height });
+    }
+    
     toggleDescription = () => this.state.descriptionVisible 
       ? this.setState({descriptionVisible: false}) : this.setState({descriptionVisible: true})
 
@@ -64,13 +71,24 @@ class Tiles extends Component {
             : null}
           <div className='art-image-container'>
             <img 
+              src={wildflowers} 
+              alt='"Texas Dirt", acrylic on canvas.' 
+              className='art-image'
+              onMouseOver={this.handleButtons('dirt')}
+              onMouseDown={this.handleNoTake}
+              onContextMenu={this.handleNoTake}
+              onClick={this.handleSelectImage(wildflowers, '"Wildflowers", acrylic on canvas, 2022.')}
+              style={visibleButtons === 'dirt' ? {opacity: 1} : {opacity: 0.9}} />
+          </div>
+          <div className='art-image-container'>
+            <img 
               src={dirt} 
               alt='"Texas Dirt", acrylic on canvas.' 
               className='art-image'
               onMouseOver={this.handleButtons('dirt')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
-              onClick={this.handleSelectImage(dirt, '"Texas Dirt", acrylic on canvas.')}
+              onClick={this.handleSelectImage(dirt, '"Texas Dirt", acrylic on canvas, 2016.')}
               style={visibleButtons === 'dirt' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
           <div className='art-image-container'>
@@ -81,7 +99,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('biscuit')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
-              onClick={this.handleSelectImage(biscuit, '"Biscuit", acrylic on canvas.')}
+              onClick={this.handleSelectImage(biscuit, '"Biscuit", acrylic on canvas, 2018.')}
               style={visibleButtons === 'biscuit' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
           <div className='art-image-container'>
@@ -92,7 +110,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('cabin')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
-              onClick={this.handleSelectImage(cabin, '"Cabin in the Woods", acrylic on canvas.')}
+              onClick={this.handleSelectImage(cabin, '"Cabin in the Woods", acrylic on canvas, 2017.')}
               style={visibleButtons === 'cabin' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
           <div className='art-image-container'>
@@ -102,7 +120,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('blackbird')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
-              onClick={this.handleSelectImage(blackbird, '"Blackbird", acrylic on canvas.')}
+              onClick={this.handleSelectImage(blackbird, '"Blackbird", acrylic on canvas, 2014.')}
               style={visibleButtons === 'blackbird' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
           <div className='art-image-container'>
@@ -113,7 +131,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('viandan')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
-              onClick={this.handleSelectImage(viandan, '"Viandan Castle", acrylic on canvas.')}
+              onClick={this.handleSelectImage(viandan, '"Viandan Castle", acrylic on canvas, 2017.')}
               style={visibleButtons === 'viandan' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
           <div className='art-image-container'>
@@ -124,7 +142,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('time')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
-              onClick={this.handleSelectImage(time, '"Time Flies", acrylic on canvas.')}
+              onClick={this.handleSelectImage(time, '"Time Flies", acrylic on canvas, 2018.')}
               style={visibleButtons === 'time' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
           <div className='art-image-container'>
@@ -135,7 +153,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('hoggy')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
-              onClick={this.handleSelectImage(hog, '"Hedgehog", colored pencil on paper.')}
+              onClick={this.handleSelectImage(hog, '"Hedgehog", colored pencil on paper, 2018.')}
               style={visibleButtons === 'hoggy' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
           <div className='art-image-container'>
@@ -146,7 +164,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('sparrow')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
-              onClick={this.handleSelectImage(sparrow, '"Sparrow", acrylic on canvas.')}
+              onClick={this.handleSelectImage(sparrow, '"Sparrow", acrylic on canvas, 2013.')}
               style={visibleButtons === 'sparrow' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
           <div className='art-image-container'>
@@ -157,7 +175,7 @@ class Tiles extends Component {
               onMouseOver={this.handleButtons('mugsy')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
-              onClick={this.handleSelectImage(mugsy, '"Mr. Magoo", ebony pencil on paper.')}
+              onClick={this.handleSelectImage(mugsy, '"Mr. Magoo", ebony pencil on paper, 2017.')}
               style={visibleButtons === 'mugsy' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
         </div>

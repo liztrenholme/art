@@ -1,15 +1,15 @@
 {
   "name": "art",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "homepage": "https://liztrenholme.github.io/art",
   "dependencies": {
     "gh-pages": "^2.2.0",
+    "postcss": "7.0.32",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.3",
-    "postcss": "7.0.32"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
