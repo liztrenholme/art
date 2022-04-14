@@ -72,13 +72,13 @@ class Tiles extends Component {
           <div className='art-image-container'>
             <img 
               src={wildflowers} 
-              alt='"Texas Dirt", acrylic on canvas.' 
+              alt='"Wildflowers", acrylic on canvas, 2022.' 
               className='art-image'
-              onMouseOver={this.handleButtons('dirt')}
+              onMouseOver={this.handleButtons('wildflowers')}
               onMouseDown={this.handleNoTake}
               onContextMenu={this.handleNoTake}
               onClick={this.handleSelectImage(wildflowers, '"Wildflowers", acrylic on canvas, 2022.')}
-              style={visibleButtons === 'dirt' ? {opacity: 1} : {opacity: 0.9}} />
+              style={visibleButtons === 'wildflowers' ? {opacity: 1} : {opacity: 0.9}} />
           </div>
           <div className='art-image-container'>
             <img 
