@@ -5,7 +5,7 @@
   "homepage": "https://liztrenholme.github.io/art",
   "dependencies": {
     "gh-pages": "^2.2.0",
-    "postcss": "7.0.32",
+    "postcss": "7.0.36",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
